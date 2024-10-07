@@ -3,7 +3,7 @@ description: The following example creates and installs a nondefault certificate
 ms.assetid: 960f2bb9-130f-494f-9af0-0ab8ae3eb6e2
 title: 'Example C Program: Creating a Certificate Chain'
 ms.topic: article
-ms.date: 05/31/2018
+ms.date: 07/10/2024
 ---
 
 # Example C Program: Creating a Certificate Chain
@@ -129,7 +129,7 @@ else
 // and the certificate retrieved.
 
 if(CertGetCertificateChain(
-    NULL,                  // use the default chain engine
+    hChainEngine,          // use created chain engine
     pCertContext,          // pointer to the end certificate
     NULL,                  // use the default time
     NULL,                  // search no additional stores
